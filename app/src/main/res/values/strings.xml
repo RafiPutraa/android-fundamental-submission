@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Dicoding Event</string>
+    <string name="title_home">Home</string>
+    <string name="title_finished">Finished</string>
+    <string name="title_upcoming">Upcoming</string>
+    <string name="dicoding_event">DICODING EVENT</string>
+    <string name="upcoming_event">UPCOMING EVENT</string>
+    <string name="finished_event">FINISHED EVENT</string>
+    <string name="favorite_event">FAVORITE EVENT</string>
+    <string name="setting_title">SETTING</string>
+    <string name="event_name">Event Name</string>
+    <string name="category">Category</string>
+    <string name="category_value">Category Value</string>
+    <string name="start">Start</string>
+    <string name="date">Date</string>
+    <string name="finish">Finish</string>
+    <string name="owner">Owner</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="event_details">EVENT DETAILS</string>
+    <string name="quota">Quota</string>
+    <string name="description">Description</string>
+    <string name="description_text">Description Text</string>
+    <string name="more_information">More Information</string>
+    <string name="finished_events">Finished Events</string>
+    <string name="no_events_found">No events found</string>
+    <string name="no_events_available">No events available</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="save_bookmark">Save Bookmark?</string>
+    <string name="setting">Setting</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="find_event">Find event</string>
+    <string name="favorite">Favorite</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailedEventFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+
+        <ImageView
+            android:id="@+id/imgMediaCover"
+            android:layout_width="390dp"
+            android:layout_height="208dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/tvEventName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/event_name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/btnFavorite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgMediaCover" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/favorite"
+            android:src="@drawable/baseline_favorite_border_24"
+            app:backgroundTint="@color/cardPrimary"
+            app:elevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvEventName"
+            app:tint="@color/white"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvOwner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/owner"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/imgMediaCover"
+            app:layout_constraintStart_toStartOf="@+id/tvEventName"
+            app:layout_constraintTop_toBottomOf="@+id/tvEventName" />
+
+        <TextView
+            android:id="@+id/tvStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/start"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvOwner"
+            app:layout_constraintStart_toStartOf="@+id/tvOwner"
+            app:layout_constraintTop_toBottomOf="@+id/tvOwner" />
+
+        <TextView
+            android:id="@+id/tvQuota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/quota"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvStart"
+            app:layout_constraintStart_toStartOf="@+id/tvStart"
+            app:layout_constraintTop_toBottomOf="@+id/tvStart" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/description"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvQuota"
+            app:layout_constraintTop_toBottomOf="@+id/tvQuota" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/description_text"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvQuota"
+            app:layout_constraintStart_toStartOf="@+id/tvEventName"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/all_rounded"
+            android:backgroundTint="@color/cardPrimary"
+            android:text="@string/more_information"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
